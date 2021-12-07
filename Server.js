@@ -12,4 +12,4 @@ if(req.url==="/home" || req.url==="/"){
 }
 
 res.end();
-}).listen(9090, () => {console.log("server has started")})
+}).listen(process.env.PORT, () => {console.log("server has started")})
